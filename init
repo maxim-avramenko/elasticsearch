@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+docker network create elasticsearch
+
+echo "DOMAIN="${1} > .env
+
+docker-compose up -d
